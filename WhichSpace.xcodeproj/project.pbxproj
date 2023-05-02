@@ -47,6 +47,7 @@
 		5E51B7801E7EE64C009395E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5EC84D821BEFB9FC00829140 /* NSStatusBarButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStatusBarButtonCell.h; sourceTree = "<group>"; };
 		5EEAD20F1E7EE523003BB305 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		B031C287282D81930037B349 /* WhichSpace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WhichSpace.entitlements; path = WhichSpace/WhichSpace.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		5E13C87E1BE03A6F00FF4305 = {
 			isa = PBXGroup;
 			children = (
+				B031C287282D81930037B349 /* WhichSpace.entitlements */,
 				5EC84D811BEFB80900829140 /* Classes */,
 				5E7B3C671BEEDAEA00CA19A4 /* Frameworks */,
 				5E13C8891BE03A6F00FF4305 /* Resources */,
@@ -150,7 +152,6 @@
 				TargetAttributes = {
 					5E13C8861BE03A6F00FF4305 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = WH3AMFYJQK;
 						LastSwiftMigration = 1130;
 					};
 				};
@@ -344,10 +345,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: George Christou (WH3AMFYJQK)";
+				CODE_SIGN_ENTITLEMENTS = WhichSpace/WhichSpace.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.3.2;
-				DEVELOPMENT_TEAM = WH3AMFYJQK;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +358,7 @@
 				INFOPLIST_FILE = WhichSpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 0.3.2;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.gechr.WhichSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = WhichSpace/Classes/WhichSpaceBridge.h;
@@ -368,10 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application: George Christou (WH3AMFYJQK)";
+				CODE_SIGN_ENTITLEMENTS = WhichSpace/WhichSpace.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.3.2;
-				DEVELOPMENT_TEAM = WH3AMFYJQK;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +384,7 @@
 				INFOPLIST_FILE = WhichSpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 0.3.2;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.gechr.WhichSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = WhichSpace/Classes/WhichSpaceBridge.h;
